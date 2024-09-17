@@ -1,0 +1,58 @@
+#include <stdio.h>
+/*
+Exercícios
+1. Faça um programa que leia um inteiro e diga se ele é maior
+que zero ou não
+*/
+int main(void) {
+    int n1;
+    printf("Digite um numero: ");
+    scanf("%d",&n1);
+    if(n1 > 0){
+        printf("%d maior que 0" ,n1);
+    }
+    else{
+        printf("%d menor que 0" ,n1);
+    }
+}
+
+/*
+2. Faça um programa que receba o mês e diga quantos dias ele
+possui (fevereiro = 28).
+*/
+int main(void) {
+    int mes;
+    printf("Digite o mes: ");
+    scanf("%d",&mes);
+    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12){
+        printf("%d tem 31 dias" ,mes);
+    }
+    else if(mes == 4 || mes == 6 || mes == 9 || mes == 11){
+        printf("%d tem 30 dias" ,mes);
+    }
+    else{
+        printf("%d tem 28 dias" ,mes);
+    }
+}
+
+/*
+3. Faça um programa que verifica se uma data é válida ou não.
+*/
+
+int main(void) {
+    int data;
+    printf("Digite a data: ");
+    scanf("%d",&data);
+    if(data > 31 || data <1 ){
+        printf("%d invalida" ,data);
+    }
+    else{
+        printf("%d valida" ,data);
+    }
+}
+
+/*
+4. Faça um programa que verifica se um número é válido para a
+seguinte regra: ele deve ser maior que zero e menor que 100.
+*/
+
