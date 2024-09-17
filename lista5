@@ -55,4 +55,15 @@ int main(void) {
 4. Faça um programa que verifica se um número é válido para a
 seguinte regra: ele deve ser maior que zero e menor que 100.
 */
+int main(void) {
+    int num;
+    printf("Digite numero: ");
+    scanf("%d" ,&num);
+    if(num < 0 || num > 100){
+        printf ("Numero invalido");
+    }
+    else{
+        printf("Numero valido");
+    }
 
+}
