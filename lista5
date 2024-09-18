@@ -83,3 +83,71 @@ int main(void) {
     }
 
 }
+/*
+6. Faça um programa que verifique se é possível calcular sua raiz
+quadrada.
+*/
+int main(void) {
+    int num;
+    printf("Digite numero: ");
+    scanf("%d" ,&num);
+    if(num > 0){
+        printf ("Eh possivel calcular a raiz do numero");
+    }
+    else{
+        printf("Nao eh possivel calcular a raiz desse numero");
+    }
+}
+
+/*
+7. Faça um programa que leia dois números, faça a soma deles e
+mostre o resultado somente se ele for maior que 10.
+*/
+int main(void){
+    int n1;
+    int n2;
+    int soma;
+    printf("Digite numero 1: /n");
+    scanf("%d",&n1);
+    printf("Digite numero 2: /n");
+    scanf("%d",&n2);
+
+    soma = n1 + n2;
+
+    if (soma > 10){
+        printf("%d + %d = %d");
+    }
+
+    else{
+        printf("ERRO");
+    }
+
+}
+/*
+8. Faça um programa que leia dois números, faça a soma deles e
+implemente a seguinte regra: se a soma for maior que 20 adicione
+mais 8; se a soma for menor que 20 subtraia 5
+*/
+int main(void){
+    int n1;
+    int n2;
+    int soma;
+    int som;
+    printf("Digite numero 1: /n");
+    scanf("%d",&n1);
+    printf("Digite numero 2: /n");
+    scanf("%d",&n2);
+
+    soma = n1 + n2;
+
+    if (soma > 20){
+        som = soma + 8;
+        printf("%d", &som);
+    }
+
+    else{
+        som = soma - 5;
+        printf("%d", &som);
+    }
+
+}
