@@ -151,3 +151,43 @@ int main(void){
     }
 
 }
+
+/*
+9. Entrar com um número e informar se ele é divisível por 3 e por 7.
+*/
+
+int main(void){
+    int num;
+
+    printf("Digite um número: ");
+    scanf("%d", &num);
+
+    if (num / 7 == 0 && num/3 == 0){
+        printf("O numero eh divisivel");
+    }
+
+    else{
+        printf("O numero nao eh divisivel");
+    }
+
+}
+
+/*
+10. Faça um programa que indique se um número digitado está entre
+20 e 90 ou não.
+*/
+int main(void){
+    int num;
+
+    printf("Digite um número: ");
+    scanf("%d", &num);
+
+    if (num > 20 && num < 90){
+        printf("O numero esta entre 20 e 90");
+    }
+
+    else{
+        printf("O numero nao esta entre 20 e 90");
+    }
+
+}
