@@ -107,15 +107,15 @@ int main(void){
     int n1;
     int n2;
     int soma;
-    printf("Digite numero 1: /n");
+    printf("Digite numero 1: ");
     scanf("%d",&n1);
-    printf("Digite numero 2: /n");
+    printf("Digite numero 2: ");
     scanf("%d",&n2);
 
     soma = n1 + n2;
 
     if (soma > 10){
-        printf("%d + %d = %d");
+        printf("O resultado eh %d\n" , soma);
     }
 
     else{
@@ -133,21 +133,21 @@ int main(void){
     int n2;
     int soma;
     int som;
-    printf("Digite numero 1: /n");
+    printf("Digite numero 1: ");
     scanf("%d",&n1);
-    printf("Digite numero 2: /n");
+    printf("Digite numero 2: ");
     scanf("%d",&n2);
 
     soma = n1 + n2;
 
     if (soma > 20){
         som = soma + 8;
-        printf("%d", &som);
+        printf("%d", som);
     }
 
     else{
         som = soma - 5;
-        printf("%d", &som);
+        printf("%d", soma);
     }
 
 }
@@ -159,10 +159,10 @@ int main(void){
 int main(void){
     int num;
 
-    printf("Digite um número: ");
+    printf("Digite um numero: ");
     scanf("%d", &num);
 
-    if (num / 7 == 0 && num/3 == 0){
+    if (num % 7 == 0 && num % 3 == 0){
         printf("O numero eh divisivel");
     }
 
