@@ -1,0 +1,167 @@
+/*1. Ler um número e se ele for maior que 20, então imprimir a
+metade do número.*/
+
+  int main(void){
+      float num, metade;
+  
+      printf("Insira um numero: ");
+      scanf("%f", &num);
+  
+      if (num > 20) {
+          metade=num / 2;
+          printf("A metade de %.2f e %.2f\n", num, metade);
+      }
+      else {
+          printf("O numero %.2f n e maior que 20.\n", num);
+      }
+      return 0;
+  }
+
+/*2. Ler um número e imprimir se ele é positivo, negativo ou nulo.*/
+
+  int main(void){
+      float num;
+  
+      printf("Insira um numero: ");
+      scanf("%f", &num);
+  
+      if (num > 0) {
+          printf(" %.2f eh positivo", num);
+      }
+      else if(num < 0){
+          printf("%.2f eh negativo", num);
+      }
+      else{
+          printf("%.2f eh nulo", num);
+      }
+      return 0;
+  }
+
+/*3. Ler um número e imprimir se ele é ou não múltiplo de 3.*/
+
+  int main(void){
+      int num;
+  
+      printf("Insira um numero: ");
+      scanf("%d", &num);
+  
+      if (num % 3 == 0) {
+          printf(" %d eh multiplo", num);
+      }
+      else{
+          printf("%d n eh multiplo", num);
+      }
+      return 0;
+  }
+
+/*4. A prefeitura de uma cidade resolveu criar uma linha de crédito
+aos seus servidores. A regra é que a prestação não pode
+ultrapassar 30% do salário bruto. Faça um programa que
+recebe o valor do salário bruto e o valor da prestação e indique
+se é ou não possível o empréstimo.*/
+
+int main(void){
+    float prest, sal, tol;
+
+    printf("Insira o salario: ");
+    scanf("%f", &sal);
+
+    printf("Insira o valor da pretacao: ");
+    scanf("%f", &prest);
+
+    tol= sal * 0.30;
+
+    if (prest <= tol) {
+        printf("eh possivel fazer o emprestimo");
+    }
+    else{
+        printf("n eh possivel fazer o emprestimo");
+    }
+    return 0;
+}
+
+/*5. Ler um número com três dígitos e imprimir se o algarismo da
+casa das centenas é par*/
+
+  int main(void){
+      int num, cent, dig;
+  
+      printf("Insira um numero de tres digitos: ");
+      scanf("%d", &num);
+  
+      cent= num /100;
+      dig = cent % 10;
+  
+      if (dig%2==0) {
+          printf("a casa das centenas eh par");
+      }
+      else{
+          printf("a casa das centenas nao eh par");
+      }
+      return 0;
+  }
+/*6. Entrar com um número e imprimir se ele é igual a 20, menor ou
+maior.*/
+
+int main(void){
+    int num;
+
+    printf("Insira um numero: ");
+    scanf("%d", &num);
+
+    if (num == 20) {
+        printf("o num eh %d", num);
+    }
+    else if (num < 20){
+        printf("%d eh menor que 20", num);
+    }
+    else{
+        printf("%d eh maior que 20", num);
+    }
+    return 0;
+}
+
+/*6. Entrar com um número e imprimir se ele é igual a 20, menor ou
+maior.*/
+
+int main(void){
+    int num;
+
+    printf("Insira um numero: ");
+    scanf("%d", &num);
+
+    if (num == 20) {
+        printf("o num eh %d", num);
+    }
+    else if (num < 20){
+        printf("%d eh menor que 20", num);
+    }
+    else{
+        printf("%d eh maior que 20", num);
+    }
+    return 0;
+}
+
+/*7. Fazer um programa que leia dois números e imprima se eles
+são iguais ou diferentes.*/
+
+  int main(void){
+      int num1, num2;
+  
+      printf("Insira um numero: ");
+      scanf("%d", &num1);
+  
+      printf("Insira um numero: ");
+      scanf("%d", &num2);
+  
+      if (num1 == num2) {
+          printf("os numeros sao iguais");
+      }
+      else if (num1 < num2){
+          printf("%d eh menor que %d", num1, num2);
+      }
+      else{
+          printf("%d eh maior que %d", num1, num2);
+      }
+      return 0;
+  }
